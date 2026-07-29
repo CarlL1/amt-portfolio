@@ -1,0 +1,35 @@
+# ---- Large / raw source media: keep OUT of the repo ----
+# GitHub blocks files > 100 MB and slows down with large binaries.
+# Video is served via YouTube/Vimeo embeds instead (see README).
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.m4v
+*.avi
+*.mkv
+
+# Raw multichannel / lossless audio (the web MP3 fold-down IS committed)
+*.wav
+*.WAV
+*.aif
+*.aiff
+*.flac
+
+# Camera-original photos (committed versions are the optimized JPGs in assets/)
+*.heic
+*.HEIC
+
+# Max/MSP and Ableton project sources
+*.maxpat
+*.maxproj
+*.als
+*.amxd
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/

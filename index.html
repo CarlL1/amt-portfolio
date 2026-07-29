@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carl Lemer — Applied Music Technology Portfolio</title>
+<meta name="description" content="Portfolio of Carl Lemer: composition, interactive music systems, and live audiovisual performance. Submitted for the UBC Minor in Applied Music Technology." />
+<link rel="preconnect" href="https://www.youtube.com" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">Carl&nbsp;Lemer<span>.</span></div>
+    <div class="nav-links">
+      <a href="#consonant-rotations">Consonant Rotations</a>
+      <a href="#in-four-quadrants">In Four Quadrants</a>
+      <a href="#cinemagic">Cinemagic</a>
+      <a href="#myo">Myo Lighting</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-eyebrow">Applied Music Technology Portfolio</div>
+  <h1>Carl Lemer<br /><span class="grad">Sound, systems &amp; light</span></h1>
+  <p>
+    I build things that turn gesture, code, and signal into music and live visuals —
+    from multichannel composition to custom-built stage lighting. I'm a dual-degree
+    BSc/BMUS Integrated Sciences student at UBC and a cellist, and this is my portfolio
+    for the Minor in Applied Music Technology.
+  </p>
+  <div class="hero-meta">
+    <span class="pill">Composition &amp; spatial audio</span>
+    <span class="pill">Max/MSP · Jitter</span>
+    <span class="pill">Ableton Live</span>
+    <span class="pill">Live audiovisual performance</span>
+    <span class="pill">Hardware &amp; embedded</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ 1 · CONSONANT ROTATIONS ============ -->
+  <section class="project" id="consonant-rotations">
+    <div class="project-head">
+      <span class="project-index">01 — Composition</span>
+      <span class="project-course">MUSC 319 · Final project</span>
+      <h2>Consonant Rotations</h2>
+      <div class="tagline">Eight-channel surround-sound composition</div>
+    </div>
+
+    <div class="project-body">
+      <p>
+        <strong>Consonant Rotations</strong> is a fixed-media piece written for an
+        eight-speaker surround ring. It weaves synthesizers together with samples of
+        early speech-synthesis recordings — the mechanical, half-human voices of the
+        first machines that tried to talk. Those consonants and vowels become raw
+        material: stretched, resynthesized, and set spinning around the listener, so the
+        "rotations" of the title are both musical gestures and literal movement of sound
+        through space.
+      </p>
+      <p>
+        The piece was composed and mixed in <strong>Ableton Live</strong>, with each of
+        the eight channels authored discretely for placement around the room. The player
+        below is a stereo fold-down of those eight channels for the web — the spatial
+        version is best heard in a surround space.
+      </p>
+    </div>
+
+    <div class="media-block audio-player">
+      <div class="ap-label"><b>Consonant Rotations</b> — stereo fold-down of the 8-channel mix (approx. 3:00)</div>
+      <audio controls preload="none" src="assets/audio/consonant-rotations.mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="audio-note">Best on headphones or speakers. Original: 8 discrete channels, 48&nbsp;kHz / 24-bit.</div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Ableton Live</span>
+      <span class="tag">8-channel surround</span>
+      <span class="tag">Spatial audio</span>
+      <span class="tag">Synthesis</span>
+      <span class="tag">Sampling</span>
+      <span class="tag">Speech synthesis</span>
+    </div>
+  </section>
+
+  <!-- ============ 2 · IN FOUR QUADRANTS ============ -->
+  <section class="project" id="in-four-quadrants">
+    <div class="project-head">
+      <span class="project-index">02 — Interactive system</span>
+      <span class="project-course">MUSC 320 · Final project</span>
+      <h2>In Four Quadrants</h2>
+      <div class="tagline">A gesture-controlled synthesizer played with two webcams</div>
+    </div>
+
+    <div class="project-body">
+      <p>
+        <strong>In Four Quadrants</strong> is an instrument you play with your hands in
+        empty air. Two webcams watch the performance space, and computer-vision patches
+        track where the hands are and how they move across four quadrants of the frame.
+        That tracking data drives the sound: the hands steer <strong>two drones</strong>,
+        shape evolving <strong>textures</strong>, and voice a <strong>melodic line</strong> —
+        no keyboard, no controller, just movement.
+      </p>
+      <p>
+        It was built in <strong>Max/MSP</strong>, with <strong>Jitter</strong> handling
+        the real-time video processing and hand-tracking that feeds the synthesis engine.
+        The result is a piece that's equally a composition, an interface, and a
+        performance — the sonic outcome is inseparable from the choreography of playing it.
+      </p>
+    </div>
+
+    <div class="media-block">
+      <!-- Photo gallery. Drop images named quadrants-1.jpg … quadrants-4.jpg into
+           assets/img/quadrants/ and they appear automatically. Any slot without a
+           matching file shows a labelled placeholder — fill or delete unused slots
+           before you publish. See README. -->
+      <div class="gallery photo-fill" id="quadrants-gallery">
+        <a href="assets/img/quadrants/quadrants-1.jpg" class="photo-slot">
+          <img loading="lazy" src="assets/img/quadrants/quadrants-1.jpg" alt="In Four Quadrants — performance photo" onerror="this.closest('.photo-slot').classList.add('empty')" />
+          <span class="photo-ph"><span class="vp-icon">＋</span>Photo slot<br /><code>quadrants-1.jpg</code></span>
+        </a>
+        <a href="assets/img/quadrants/quadrants-2.jpg" class="photo-slot">
+          <img loading="lazy" src="assets/img/quadrants/quadrants-2.jpg" alt="In Four Quadrants — performance photo" onerror="this.closest('.photo-slot').classList.add('empty')" />
+          <span class="photo-ph"><span class="vp-icon">＋</span>Photo slot<br /><code>quadrants-2.jpg</code></span>
+        </a>
+        <a href="assets/img/quadrants/quadrants-3.jpg" class="photo-slot">
+          <img loading="lazy" src="assets/img/quadrants/quadrants-3.jpg" alt="In Four Quadrants — performance photo" onerror="this.closest('.photo-slot').classList.add('empty')" />
+          <span class="photo-ph"><span class="vp-icon">＋</span>Photo slot<br /><code>quadrants-3.jpg</code></span>
+        </a>
+        <a href="assets/img/quadrants/quadrants-4.jpg" class="photo-slot">
+          <img loading="lazy" src="assets/img/quadrants/quadrants-4.jpg" alt="In Four Quadrants — performance photo" onerror="this.closest('.photo-slot').classList.add('empty')" />
+          <span class="photo-ph"><span class="vp-icon">＋</span>Photo slot<br /><code>quadrants-4.jpg</code></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Max/MSP</span>
+      <span class="tag">Jitter</span>
+      <span class="tag">Computer vision</span>
+      <span class="tag">Gesture control</span>
+      <span class="tag">Real-time synthesis</span>
+      <span class="tag">Interactive performance</span>
+    </div>
+  </section>
+
+  <!-- ============ 3 · CINEMAGIC ============ -->
+  <section class="project" id="cinemagic">
+    <div class="project-head">
+      <span class="project-index">03 — Live audiovisual · Hardware</span>
+      <span class="project-course">Cinemagic Electronic Arts</span>
+      <h2>Custom Lighting &amp; Visual Systems</h2>
+      <div class="tagline">Hand-built LED &amp; laser fixtures, projection/laser mapping, and DJ-synced visuals</div>
+    </div>
+
+    <div class="project-body">
+      <p>
+        For <strong>Cinemagic Electronic Arts</strong>, a Vancouver electronic-music
+        collective, I design, build, and program the lighting and visual systems that
+        run their shows. That starts at the hardware level: I hand-build custom LED
+        fixtures and lasers with <strong>3D-printed housings</strong> and
+        <strong>custom PCBs</strong>, then program and control them live throughout the
+        night.
+      </p>
+      <p>
+        On the visual side I run <strong>projection mapping and laser mapping</strong> and
+        live video through <strong>Resolume</strong> and <strong>MadMapper</strong>,
+        pulling in additional feeds over <strong>NDI</strong>. The whole rig is
+        <strong>beat- and audio-reactive</strong>: I use waveform analysis and, crucially,
+        <strong>Beat Link Trigger</strong> and <strong>Ableton Link</strong> to lock the
+        visuals to the DJ's clock — so lights, lasers, and projections stay in time with
+        the music in real time while I perform the show alongside the artist.
+      </p>
+
+      <div class="subhead">Live performance</div>
+      <div class="gallery hero-first">
+        <a href="assets/img/cinemagic/03_2025-09-12_Cinemagic_-_MOMENT_Lexer.jpg"><img loading="lazy" src="assets/img/cinemagic/03_2025-09-12_Cinemagic_-_MOMENT_Lexer.jpg" alt="Cinemagic main stage — triangular LED truss and video walls, MOMENT series with Lexer" /></a>
+        <a href="assets/img/cinemagic/06_2026-06-28_Friends_Club_Festival.jpg"><img loading="lazy" src="assets/img/cinemagic/06_2026-06-28_Friends_Club_Festival.jpg" alt="Friends Club festival — illuminated geometric LED structure over the crowd" /></a>
+        <a href="assets/img/cinemagic/01_2025-02-08_Cinemagic_-_LUMEN_Theus_Mago.jpg"><img loading="lazy" src="assets/img/cinemagic/01_2025-02-08_Cinemagic_-_LUMEN_Theus_Mago.jpg" alt="LUMEN with Theus Mago — LED beams across the venue" /></a>
+        <a href="assets/img/cinemagic/04_2025-10-31_Cinemagic_-_Halloween.jpg"><img loading="lazy" src="assets/img/cinemagic/04_2025-10-31_Cinemagic_-_Halloween.jpg" alt="Halloween show — red-lit staging and effects" /></a>
+        <a href="assets/img/cinemagic/02_2025-09-12_Cinemagic_-_MOMENT_Lexer.jpg"><img loading="lazy" src="assets/img/cinemagic/02_2025-09-12_Cinemagic_-_MOMENT_Lexer.jpg" alt="Front-of-house control during the Lexer show" /></a>
+        <a href="assets/img/cinemagic/05_2026-06-28_Friends_Club_Festival.jpg"><img loading="lazy" src="assets/img/cinemagic/05_2026-06-28_Friends_Club_Festival.jpg" alt="Friends Club festival — LED structure at dusk" /></a>
+      </div>
+
+      <div class="subhead">Building the fixtures</div>
+      <div class="gallery">
+        <a href="assets/img/cinemagic/07_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/07_Setup_-_Building_Lights.jpg" alt="Soldering and wiring custom LED fixtures at the bench" /></a>
+        <a href="assets/img/cinemagic/08_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/08_Setup_-_Building_Lights.jpg" alt="Close-up of custom PCB and fixture assembly" /></a>
+        <a href="assets/img/cinemagic/09_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/09_Setup_-_Building_Lights.jpg" alt="Assembling LED tube fixtures and wiring harnesses" /></a>
+        <a href="assets/img/cinemagic/10_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/10_Setup_-_Building_Lights.jpg" alt="Batch of hand-built LED tube fixtures ready for rigging" /></a>
+      </div>
+
+      <div class="subhead">Rigging &amp; install</div>
+      <div class="gallery">
+        <a href="assets/img/cinemagic/11_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/11_Setup_-_Building_Lights.jpg" alt="Truss rig going up in the venue" /></a>
+        <a href="assets/img/cinemagic/13_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/13_Setup_-_Building_Lights.jpg" alt="Fixtures staged for install" /></a>
+        <a href="assets/img/cinemagic/14_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/14_Setup_-_Building_Lights.jpg" alt="Overhead truss and rigging in the industrial venue" /></a>
+        <a href="assets/img/cinemagic/12_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/12_Setup_-_Building_Lights.jpg" alt="Truss and rig in the empty venue during load-in" /></a>
+        <a href="assets/img/cinemagic/15_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/15_Setup_-_Building_Lights.jpg" alt="Rigging detail during install" /></a>
+        <a href="assets/img/cinemagic/16_Setup_-_Building_Lights.jpg"><img loading="lazy" src="assets/img/cinemagic/16_Setup_-_Building_Lights.jpg" alt="Full stage rig assembled in the warehouse space" /></a>
+      </div>
+
+      <div class="subhead">Show reel — selected clips by event</div>
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.25rem">These are your picks from each event. Upload each clip to YouTube/Vimeo (unlisted) and paste it into the matching slot — the README table maps every slot id to its source file. Delete any slot you decide not to use.</p>
+      <div class="reel-event">
+        <h4 class="reel-title">Halloween <span>· Oct 26, 2024</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-halloween-2024-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-halloween-2024-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-halloween-2024-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20241027_123720000_iOS.MOV</code> (0:23) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">LUMEN: Theus Mago <span>· Feb 8, 2025</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-lumen-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-lumen-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-lumen-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250208_094840672_iOS.MP4</code> (0:07) — see README</div>
+            </div>
+          </div>
+          <div class="video-embed" id="cinemagic-lumen-2">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-lumen-2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-lumen-2</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250209_080415000_iOS.MOV</code> (0:12) — see README</div>
+            </div>
+          </div>
+          <div class="video-embed" id="cinemagic-lumen-3">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-lumen-3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-lumen-3</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250209_084849000_iOS.MOV</code> (0:10) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">Open Air Day Party <span>· Jul 12, 2025</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-openair-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-openair-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-openair-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250713_051903000_iOS.MOV</code> (0:34) — see README</div>
+            </div>
+          </div>
+          <div class="video-embed" id="cinemagic-openair-2">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-openair-2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-openair-2</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250714_045328000_iOS.MP4</code> (0:19) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">MOMENT: Lexer <span>· Sep 12, 2025</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-lexer-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-lexer-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-lexer-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250913_105720000_iOS.MOV</code> (0:32) — see README</div>
+            </div>
+          </div>
+          <div class="video-embed" id="cinemagic-lexer-2">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-lexer-2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-lexer-2</code></div>
+              <div style="font-size:0.8rem">Upload <code>20250913_113901000_iOS.MOV</code> (0:11) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">Halloween <span>· Oct 31, 2025</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-halloween-2025-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-halloween-2025-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-halloween-2025-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20251101_115449000_iOS.MOV</code> (0:37) — see README</div>
+            </div>
+          </div>
+          <div class="video-embed" id="cinemagic-halloween-2025-2">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-halloween-2025-2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-halloween-2025-2</code></div>
+              <div style="font-size:0.8rem">Upload <code>20251101_120556000_iOS.MOV</code> (0:14) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">MOMENT: Einmusik <span>· Nov 21, 2025</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-einmusik-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-einmusik-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-einmusik-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20251122_093958000_iOS.MOV</code> (0:40) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">MOMENT: Yulia Niko <span>· Feb 14, 2026</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-yulia-niko-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-yulia-niko-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-yulia-niko-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20260215_055934000_iOS.MOV</code> (0:21) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-event">
+        <h4 class="reel-title">Friends Club Festival <span>· Jun 28, 2026</span></h4>
+        <div class="video-grid">
+          <div class="video-embed" id="cinemagic-friends-club-1">
+            <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cinemagic — cinemagic-friends-club-1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="video-placeholder">
+              <div class="vp-icon">▶</div>
+              <div>Slot <code>cinemagic-friends-club-1</code></div>
+              <div style="font-size:0.8rem">Upload <code>20260629_063303000_iOS.MOV</code> (0:20) — see README</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credits">
+        <div class="ct">Lighting &amp; visuals for</div>
+        <p>
+          Touring &amp; guest artists including <strong>Pig&nbsp;&amp;&nbsp;Dan</strong>,
+          <strong>Radio&nbsp;Slave</strong>, <strong>Lexer</strong>,
+          <strong>Einmusik</strong>, and <strong>Marc&nbsp;DePulse</strong> — and the
+          <strong>Friends&nbsp;Club</strong> festival (Riyoon, Sommers&nbsp;(UK),
+          Just&nbsp;Emma, Sivz), across Cinemagic's LUMEN and MOMENT series in Vancouver.
+        </p>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Resolume</span>
+      <span class="tag">MadMapper</span>
+      <span class="tag">Projection mapping</span>
+      <span class="tag">Laser mapping</span>
+      <span class="tag">Beat Link Trigger</span>
+      <span class="tag">Ableton Link</span>
+      <span class="tag">NDI</span>
+      <span class="tag">Custom PCBs</span>
+      <span class="tag">3D printing</span>
+      <span class="tag">Audio-reactive</span>
+    </div>
+  </section>
+
+  <!-- ============ 4 · MYO ============ -->
+  <section class="project" id="myo">
+    <div class="project-head">
+      <span class="project-index">04 — Interactive system · Hardware</span>
+      <span class="project-course">Cinemagic Electronic Arts</span>
+      <h2>Myo Gesture-Controlled Lighting</h2>
+      <div class="tagline">Conducting the light show with muscle signals</div>
+    </div>
+
+    <div class="project-body">
+      <p>
+        This project turns a <strong>Myo armband</strong> into a live lighting controller.
+        The band reads <strong>EMG (muscle) signals</strong> and hand poses from the
+        forearm; a custom <strong>Max/MSP</strong> patch interprets those gestures and maps
+        them onto the lighting and effects of the Cinemagic rig. A clutch gesture latches a
+        parameter so it can be set and held, and arm motion modulates it — letting a
+        performer shape the whole light show by hand, mid-set, without ever touching a
+        console.
+      </p>
+      <p>
+        It extends the gesture-driven thinking behind <em>In Four Quadrants</em> out of the
+        studio and onto the dancefloor, connecting a wearable sensor directly to the
+        hardware I build and program for live shows.
+      </p>
+    </div>
+
+    <div class="gallery">
+      <a href="assets/img/myo/myo-poster.jpg"><img loading="lazy" src="assets/img/myo/myo-poster.jpg" alt="Performing with the Myo armband — hand gesture driving purple LED strips overhead" /></a>
+      <a href="assets/img/myo/myo-poster-2.jpg"><img loading="lazy" src="assets/img/myo/myo-poster-2.jpg" alt="Myo armband controlling overhead lighting during a test" /></a>
+    </div>
+
+    <div class="media-block">
+      <div class="video-embed" id="myo-video-1">
+        <!-- ▼▼ PASTE YOUR YOUTUBE / VIMEO EMBED IFRAME HERE, then delete the .video-placeholder div below ▼▼ -->
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Myo gesture-controlled lighting — demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <div class="video-placeholder">
+          <div class="vp-icon">▶</div>
+          <div>Video embed slot — <code>myo-video-1</code></div>
+          <div style="font-size:0.8rem">Paste an unlisted YouTube/Vimeo iframe here (see README)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Myo armband</span>
+      <span class="tag">EMG</span>
+      <span class="tag">Max/MSP</span>
+      <span class="tag">Gesture control</span>
+      <span class="tag">Lighting control</span>
+      <span class="tag">Wearable</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p><strong>Carl Lemer</strong> · Integrated Sciences (BSc/BMUS), cello · University of British Columbia</p>
+  <p>Portfolio for the Minor in Applied Music Technology · <a href="mailto:cl437980@gmail.com">cl437980@gmail.com</a></p>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="" id="lightbox-img" />
+</div>
+
+<script>
+  // Simple lightbox for gallery images
+  (function () {
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.gallery a').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (a.classList.contains('empty')) return; // skip unfilled photo slots
+        lbImg.src = a.getAttribute('href');
+        lbImg.alt = a.querySelector('img') ? a.querySelector('img').alt : '';
+        lb.classList.add('open');
+      });
+    });
+    function close() { lb.classList.remove('open'); lbImg.src = ''; }
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  })();
+</script>
+
+</body>
+</html>
