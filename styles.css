@@ -267,6 +267,26 @@ img { max-width: 100%; display: block; }
 }
 
 
+/* Download link / button */
+.dl {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--cyan);
+  border: 1px solid var(--border-v);
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  background: var(--bg-soft);
+}
+.dl:hover { border-color: var(--cyan); color: var(--cyan); text-decoration: none; }
+.dl-i { flex: none; }
+
+/* Two screenshots side by side (uncropped, click to enlarge) */
+.shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.shot-grid .shot { margin: 0; }
+
 /* Max/MSP screenshot figure */
 .shot { margin: 1.5rem 0; }
 .shot a { display: block; }
@@ -386,4 +406,5 @@ img { max-width: 100%; display: block; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .project { padding: 3rem 0; }
   .video-embed.portrait { width: clamp(150px, 45%, 232px); }
+  .shot-grid { grid-template-columns: 1fr; }
 }
