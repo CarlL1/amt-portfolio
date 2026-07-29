@@ -154,17 +154,24 @@ img { max-width: 100%; display: block; }
 /* ---------- Media ---------- */
 .media-block { margin: 1.75rem 0; }
 
-/* Video: responsive 16:9 */
+/* Video embeds — sized to the real video aspect so there are no side/letterbox bars */
 .video-embed {
   position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background:
-    repeating-linear-gradient(45deg, #16161f, #16161f 12px, #191924 12px, #191924 24px);
-  border: 1px dashed var(--border-v);
+  background: #000;
+  border: 1px solid var(--border-v);
   border-radius: var(--radius);
   overflow: hidden;
 }
+/* placeholder-only fallback look (no live video) */
+.video-embed:has(.video-placeholder) {
+  border-style: dashed;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background:
+    repeating-linear-gradient(45deg, #16161f, #16161f 12px, #191924 12px, #191924 24px);
+}
+.video-embed.portrait  { aspect-ratio: 9 / 16;  height: clamp(320px, 52vh, 440px); }
+.video-embed.landscape { aspect-ratio: 16 / 9;  height: clamp(190px, 30vh, 264px); }
 .video-embed iframe {
   position: absolute;
   inset: 0;
@@ -194,13 +201,22 @@ img { max-width: 100%; display: block; }
   color: var(--cyan);
 }
 
-/* Video grid (multiple embeds side by side) */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 0.75rem;
-  margin: 0.5rem 0 0;
+/* Show reel — events flow and pack; each event has its own videos row */
+.reel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem 2rem;
+  align-items: flex-start;
 }
+.reel-event { display: flex; flex-direction: column; gap: 0.75rem; max-width: 100%; }
+.reel-head { max-width: 42ch; }
+.reel-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 0; }
+.reel-title span { color: var(--muted); font-weight: 400; font-size: 0.85rem; }
+.reel-desc { color: #cfcfda; font-size: 0.88rem; line-height: 1.5; margin: 0.35rem 0 0; }
+.reel-videos { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: flex-start; }
+
+/* legacy grid (kept harmless) */
+.video-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 
 /* Photo slots that auto-fill from files on disk */
 .photo-slot { position: relative; }
@@ -237,15 +253,12 @@ img { max-width: 100%; display: block; }
 }
 
 
-/* Show-reel grouped by event */
-.reel-event { margin: 0 0 1.75rem; }
-.reel-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text);
-  margin: 0 0 0.6rem;
-}
-.reel-title span { color: var(--muted); font-weight: 400; font-size: 0.85rem; }
+/* Max/MSP screenshot figure */
+.shot { margin: 1.5rem 0; }
+.shot a { display: block; }
+.shot img { width: 100%; border: 1px solid var(--border-v); border-radius: 12px; background: #000; }
+.shot figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 0.55rem; }
+.shot code { color: var(--cyan); }
 
 /* Audio */
 .audio-player {
@@ -272,6 +285,7 @@ img { max-width: 100%; display: block; }
 }
 .gallery.hero-first > a:first-child { grid-column: span 2; grid-row: span 2; }
 .gallery a {
+  position: relative;
   display: block;
   border-radius: 10px;
   overflow: hidden;
@@ -286,6 +300,18 @@ img { max-width: 100%; display: block; }
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
 .gallery a:hover img { transform: scale(1.05); }
+.gallery .credit {
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  background: rgba(0,0,0,0.62);
+  color: #e9e9f0;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  padding: 2px 7px;
+  border-radius: 5px;
+  pointer-events: none;
+}
 
 .subhead {
   font-size: 0.78rem;
