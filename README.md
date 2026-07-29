@@ -56,6 +56,10 @@ That's the URL to put on the AMT application form.
 
 ## 2. Add your videos (the empty "▶ video embed slot" boxes)
 
+> ✅ **Already done:** all 14 video slots are filled from your YouTube playlist — 13 Cinemagic
+> clips plus the Myo demo — each matched to its source clip by filename. The steps below are only
+> if you want to swap, add, or remove a video later.
+
 Raw clips are **not** in this repo on purpose — GitHub rejects files over 100 MB and gets slow
 with big video. Instead, upload each clip to **YouTube or Vimeo as _Unlisted_** (unlisted = anyone
 with the link can watch, but it won't show up in search or on your channel), then paste the embed
@@ -78,7 +82,7 @@ There are **13 Cinemagic slots** (one per clip in your `picks` folders, grouped 
 | `cinemagic-einmusik-1` | MOMENT: Einmusik · Nov 21, 2025 | `20251122_093958000_iOS.MOV` | 0:40 |
 | `cinemagic-yulia-niko-1` | MOMENT: Yulia Niko · Feb 14, 2026 | `20260215_055934000_iOS.MOV` | 0:21 |
 | `cinemagic-friends-club-1` | Friends Club Festival · Jun 28, 2026 | `20260629_063303000_iOS.MOV` | 0:20 |
-| `myo-video-1` | Myo lighting | (your Myo demo clip) | — |
+| `myo-video-1` | Myo lighting | `20260607_005849000_iOS` | — |
 
 (In Four Quadrants uses **photos**, not video — see section 2b.)
 
