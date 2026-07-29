@@ -170,8 +170,9 @@ img { max-width: 100%; display: block; }
   background:
     repeating-linear-gradient(45deg, #16161f, #16161f 12px, #191924 12px, #191924 24px);
 }
-.video-embed.portrait  { aspect-ratio: 9 / 16;  height: clamp(320px, 52vh, 440px); }
-.video-embed.landscape { aspect-ratio: 16 / 9;  height: clamp(190px, 30vh, 264px); }
+/* Explicit widths so a loaded iframe can't stretch the box to full width */
+.video-embed.portrait  { width: 232px; max-width: 100%; aspect-ratio: 9 / 16; }
+.video-embed.landscape { width: 100%;  max-width: 468px; aspect-ratio: 16 / 9; }
 .video-embed iframe {
   position: absolute;
   inset: 0;
@@ -201,14 +202,20 @@ img { max-width: 100%; display: block; }
   color: var(--cyan);
 }
 
-/* Show reel — events flow and pack; each event has its own videos row */
+/* Show reel — two-column masonry on desktop, two events visible at once */
 .reel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.25rem 2rem;
-  align-items: flex-start;
+  column-count: 2;
+  column-gap: 2.5rem;
 }
-.reel-event { display: flex; flex-direction: column; gap: 0.75rem; max-width: 100%; }
+.reel-event {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0 0 2.25rem;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
 .reel-head { max-width: 42ch; }
 .reel-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 0; }
 .reel-title span { color: var(--muted); font-weight: 400; font-size: 0.85rem; }
@@ -363,9 +370,13 @@ img { max-width: 100%; display: block; }
 .footer a { color: var(--muted); text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 820px) {
+  .reel { column-count: 1; }
+}
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .gallery.hero-first > a:first-child { grid-column: span 2; grid-row: auto; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .project { padding: 3rem 0; }
+  .video-embed.portrait { width: clamp(150px, 45%, 232px); }
 }
