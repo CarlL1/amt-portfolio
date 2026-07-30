@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Carl Lemer — Applied Music Technology Portfolio</title>
 <meta name="description" content="Portfolio of Carl Lemer: composition, interactive music systems, and live audiovisual performance. Submitted for the UBC Minor in Applied Music Technology." />
 <link rel="preconnect" href="https://www.youtube.com" />
 <link rel="stylesheet" href="styles.css" />
+
+<style id="patch-theme">
+/* ---- Max/MSP patch theme (this copy only) ---- */
+body.patch { background:
+   radial-gradient(circle at 18px 18px, rgba(255,255,255,0.035) 1.5px, transparent 1.6px) 0 0 / 26px 26px,
+   var(--bg); }
+body.patch main.wrap { position: relative; z-index: 1; }
+body.patch .project{
+  position: relative; border: 1px solid #34354c; border-radius: 9px;
+  background: rgba(17,17,25,0.72);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.35), 0 10px 34px rgba(0,0,0,.28);
+  margin: 0 0 4rem; padding: 1.6rem 2.1rem 2.3rem;
+}
+body.patch .project:last-of-type{ margin-bottom: 2rem; }
+body.patch .project-head{
+  position: relative; display: inline-block; border: 1px solid #3c3c56;
+  border-radius: 6px; background: #14141e; padding: 0.7rem 1rem 0.85rem;
+  margin-bottom: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,.3);
+}
+/* box around each media group so a cable attaches to a real edge */
+body.patch .gallery{
+  border: 1px solid #2b2b40; border-radius: 8px; padding: 0.75rem;
+  background: rgba(20,20,30,0.35); gap: 0.8rem; margin: 1.25rem 0;
+}
+body.patch .reel-event{
+  border: 1px solid #2b2b40; border-radius: 7px; padding: 0.85rem;
+  background: rgba(20,20,30,0.45);
+}
+body.patch .reel{ gap: 2.7rem 2.9rem; }
+body.patch .reel-videos{ gap: 1.6rem; }
+body.patch .audio-player, body.patch .credits, body.patch .shot img{ box-shadow: 0 0 0 1px rgba(255,255,255,.03); }
+#patch-svg{ position:absolute; top:0; left:0; pointer-events:none; z-index:40; overflow:visible; }
+#patch-svg .pc{ filter: drop-shadow(0 0 2px rgba(224,69,154,.18)); }
+</style>
 </head>
-<body>
+<body class="patch">
 
 <!-- ============ NAV ============ -->
 <nav class="nav">
@@ -29,9 +64,9 @@
   <h1>Carl Lemer<br /><span class="grad">Sound, systems &amp; light</span></h1>
   <p>
     I build things that turn gesture, code, and signal into music and live visuals —
-    from multichannel composition to custom-built stage lighting. I'm a dual-degree
-    BSc/BMUS Integrated Sciences student at UBC and a cellist, and this is my portfolio
-    for the Minor in Applied Music Technology.
+    from multichannel composition to custom-built stage lighting. I'm a
+    student in the BMUS/BSc Dual Degree program, studying Cello and Neuroscience of Music, and this is my portfolio
+    for the application to the Minor in Applied Music Technology.
   </p>
   <div class="hero-meta">
     <span class="pill">Composition &amp; spatial audio</span>
@@ -77,7 +112,7 @@
         Your browser does not support the audio element.
       </audio>
       <div class="audio-note">Best on headphones or speakers. Original: 8 discrete channels, 48&nbsp;kHz / 24-bit.</div>
-      <a class="dl" href="https://ubcca-my.sharepoint.com/:u:/g/personal/clemer_student_ubc_ca/IQCB7yfzHc9ySJtrtRjUeOdpAcLk3Drfo1yQPVAsTilVsms?e=esH4fC" target="_blank" rel="noopener"><svg class="dl-i" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 12l5 5 5-5"/><path d="M4 21h16"/></svg> Download the full 8-channel version (ZIP)</a>
+      <a class="dl" href="https://ubcca-my.sharepoint.com/:u:/g/personal/clemer_student_ubc_ca/IQCB7yfzHc9ySJtrtRjUeOdpAcLk3Drfo1yQPVAsTilVsms?e=esH4fC" target="_blank" rel="noopener"><svg class="dl-i" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 12l5 5 5-5"/><path d="M4 21h16"/></svg> Download the full 8-channel version (ZIP, UBC login required)</a>
     </div>
 
     <div class="tags">
@@ -114,7 +149,7 @@
         The result is a piece that's equally a composition, an interface, and a
         performance — the sonic outcome is inseparable from the choreography of playing it.
       </p>
-      <a class="dl" href="https://ubcca-my.sharepoint.com/:u:/g/personal/clemer_student_ubc_ca/IQAoLAU1w3DqRJBnpimX41spAac5JuQVZNYBLsY0rsk8LoA?e=aEQHYc" target="_blank" rel="noopener"><svg class="dl-i" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 12l5 5 5-5"/><path d="M4 21h16"/></svg> Download the Max/MSP project (.maxproj)</a>
+      <a class="dl" href="https://ubcca-my.sharepoint.com/:u:/g/personal/clemer_student_ubc_ca/IQAoLAU1w3DqRJBnpimX41spAac5JuQVZNYBLsY0rsk8LoA?e=aEQHYc" target="_blank" rel="noopener"><svg class="dl-i" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 12l5 5 5-5"/><path d="M4 21h16"/></svg> Download the Max/MSP project (.maxproj, UBC login required)</a>
     </div>
 
     <div class="media-block">
@@ -154,7 +189,7 @@
         For <strong>Cinemagic Electronic Arts</strong>, a Vancouver electronic-music
         collective, I design, build, and program the lighting and visual systems that
         run their shows. That starts at the hardware level: I hand-build custom LED
-        fixtures and lasers with <strong>3D-printed housings</strong> and
+        fixtures with <strong>3D-printed housings</strong> and
         <strong>custom PCBs</strong>, then program and control them live throughout the
         night.
       </p>
@@ -253,7 +288,7 @@
       <div class="reel-event">
         <div class="reel-head">
           <h4 class="reel-title">Halloween <span>· Oct 31, 2025</span></h4>
-          <p class="reel-desc">Installation design and rigging, with a live video feed on the LED wall via NDI and Resolume. (The sparkly face is me — I'm in a vampire costume.)</p>
+          <p class="reel-desc">Installation design and rigging, with a live video feed on the LED wall via NDI and Resolume. (I'm not usually in a vampire costume)</p>
         </div>
         <div class="reel-videos">
           <div class="video-embed portrait" id="halloween-2025-1">
@@ -278,7 +313,7 @@
       <div class="reel-event">
         <div class="reel-head">
           <h4 class="reel-title">MOMENT: Yulia Niko <span>· Feb 14, 2026</span></h4>
-          <p class="reel-desc">The first installation in Cinemagic's new venue: a custom LED installation with NDI streams (not shown in this clip).</p>
+          <p class="reel-desc">The first installation in Cinemagic's new venue: a custom LED installation with NDI streams (screens not shown in this clip).</p>
         </div>
         <div class="reel-videos">
           <div class="video-embed portrait" id="yulia-niko-1">
@@ -376,7 +411,7 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
-  <p><strong>Carl Lemer</strong> · Integrated Sciences (BSc/BMUS), cello · University of British Columbia</p>
+  <p><strong>Carl Lemer</strong> · Integrated Sciences (BSc), Cello (BMUS) · University of British Columbia</p>
   <p>Portfolio for the Minor in Applied Music Technology · <a href="mailto:carl@lemer.ca">carl@lemer.ca</a></p>
 </footer>
 
@@ -406,5 +441,87 @@
   })();
 </script>
 
+
+<script id="patch-cables">
+(function(){
+  if(!document.body.classList.contains('patch')) return;
+  var NS='http://www.w3.org/2000/svg';
+  var SPINE='.project-head, .audio-player, .shot-grid, #myo .shot, .gallery, .reel, .credits, #myo .video-embed';
+  // (local reel/shot routing handled explicitly in draw)
+  var svg;
+  function ensure(){ svg=document.getElementById('patch-svg'); if(svg) return;
+    svg=document.createElementNS(NS,'svg'); svg.id='patch-svg';
+    var defs=document.createElementNS(NS,'defs');
+    defs.innerHTML='<linearGradient id="pcable" x1="0" y1="0" x2="1" y2="0">'+
+      '<stop offset="0" stop-color="#e0459a"/><stop offset="0.5" stop-color="#7b5bff"/>'+
+      '<stop offset="1" stop-color="#38d9e0"/></linearGradient>';
+    svg.appendChild(defs); document.body.appendChild(svg);
+  }
+  function rect(el){ var r=el.getBoundingClientRect(), sx=window.scrollX, sy=window.scrollY;
+    return {left:r.left+sx, right:r.right+sx, top:r.top+sy, bottom:r.bottom+sy, w:r.width, h:r.height}; }
+  function len(a,b){ return Math.hypot(b[0]-a[0], b[1]-a[1]); }
+  function rounded(pts,r){
+    var out=[]; for(var i=0;i<pts.length;i++){ if(i&&pts[i][0]===pts[i-1][0]&&pts[i][1]===pts[i-1][1]) continue; out.push(pts[i]); }
+    pts=out; if(pts.length<2) return '';
+    var d='M '+pts[0][0]+' '+pts[0][1];
+    for(var i=1;i<pts.length-1;i++){ var p0=pts[i-1],p1=pts[i],p2=pts[i+1];
+      var l1=len(p0,p1),l2=len(p1,p2); var rr=Math.min(r,l1/2,l2/2);
+      var a=[p1[0]+(p0[0]-p1[0])/l1*rr, p1[1]+(p0[1]-p1[1])/l1*rr];
+      var b=[p1[0]+(p2[0]-p1[0])/l2*rr, p1[1]+(p2[1]-p1[1])/l2*rr];
+      d+=' L '+a[0].toFixed(1)+' '+a[1].toFixed(1)+' Q '+p1[0].toFixed(1)+' '+p1[1].toFixed(1)+' '+b[0].toFixed(1)+' '+b[1].toFixed(1);
+    }
+    var e=pts[pts.length-1]; d+=' L '+e[0].toFixed(1)+' '+e[1].toFixed(1); return d;
+  }
+  function path(d){ if(!d) return; var p=document.createElementNS(NS,'path'); p.setAttribute('class','pc');
+    p.setAttribute('d',d); p.setAttribute('fill','none'); p.setAttribute('stroke','url(#pcable)');
+    p.setAttribute('stroke-width','2'); p.setAttribute('stroke-linecap','round'); p.setAttribute('stroke-linejoin','round'); p.setAttribute('opacity','0.8'); svg.appendChild(p); }
+  function nub(x,y){ var n=document.createElementNS(NS,'rect'); n.setAttribute('class','pn');
+    n.setAttribute('x',x-4.5); n.setAttribute('y',y-4.5); n.setAttribute('width',9); n.setAttribute('height',9);
+    n.setAttribute('rx',1.5); n.setAttribute('fill','#c7c7d6'); n.setAttribute('stroke','#000'); n.setAttribute('stroke-width','0.5'); svg.appendChild(n); }
+  function orthoPoints(A,B,railR,railL){
+    var ao=[A.right, A.top+A.h/2], bi=[B.left, B.top+B.h/2];
+    if(B.left >= A.right-4){ var mx=(A.right+B.left)/2; return [ao,[mx,ao[1]],[mx,bi[1]],bi]; }
+    var yC=B.top-14; if(yC < ao[1]+12) yC=ao[1]+12; if(yC > bi[1]-4) yC=bi[1]-4;
+    return [ao,[railR,ao[1]],[railR,yC],[railL,yC],[railL,bi[1]],bi];
+  }
+  function draw(){
+    ensure();
+    var old=svg.querySelectorAll('.pc,.pn'); for(var i=0;i<old.length;i++) old[i].remove();
+    var W=document.documentElement.scrollWidth, H=document.documentElement.scrollHeight;
+    svg.setAttribute('width',W); svg.setAttribute('height',H); svg.setAttribute('viewBox','0 0 '+W+' '+H);
+    // spine, per section, using that section's left/right rails (gutters)
+    document.querySelectorAll('.project').forEach(function(sec){
+      var s=rect(sec); var railR=s.right-14, railL=s.left+14;
+      var rs=[].slice.call(sec.querySelectorAll(SPINE)).map(rect); if(rs.length<1) return;
+      for(var i=0;i<rs.length-1;i++) path(rounded(orthoPoints(rs[i],rs[i+1],railR,railL),9));
+      rs.forEach(function(r){ nub(r.left, r.top+r.h/2); nub(r.right, r.top+r.h/2); });
+    });
+    // local: reel videos (route cross-event cables around the column edges to avoid text)
+    document.querySelectorAll('.reel').forEach(function(reel){
+      var vids=[].slice.call(reel.querySelectorAll('.video-embed'));
+      for(var j=0;j<vids.length-1;j++){
+        var A=rect(vids[j]), B=rect(vids[j+1]);
+        var Aev=vids[j].closest('.reel-event'), Bev=vids[j+1].closest('.reel-event');
+        var aOut=[A.right, A.top+A.h/2], bIn=[B.left, B.top+B.h/2], pts;
+        if(B.left >= A.right-4){ var mx=(A.right+B.left)/2; pts=[aOut,[mx,aOut[1]],[mx,bIn[1]],bIn]; }
+        else if(Aev===Bev){ var rR=A.right+14, rL=B.left-14, yC=Math.max(aOut[1]+10, B.top-12); pts=[aOut,[rR,aOut[1]],[rR,yC],[rL,yC],[rL,bIn[1]],bIn]; }
+        else { var er=rect(Aev), el=rect(Bev); var rR=er.right+16, rL=el.left-16, yC=el.top-14; if(yC<aOut[1]+12)yC=aOut[1]+12; if(yC>bIn[1]-4)yC=bIn[1]-4; pts=[aOut,[rR,aOut[1]],[rR,yC],[rL,yC],[rL,bIn[1]],bIn]; }
+        path(rounded(pts,7)); nub(A.right,A.top+A.h/2); nub(B.left,B.top+B.h/2);
+      }
+    });
+    document.querySelectorAll('.shot-grid').forEach(function(c){
+      var ks=[].slice.call(c.querySelectorAll('.shot')).map(rect);
+      for(var j=0;j<ks.length-1;j++){ var A=ks[j],B=ks[j+1]; path(rounded(orthoPoints(A,B,A.right+14,B.left-14),7)); nub(A.right,A.top+A.h/2); nub(B.left,B.top+B.h/2); }
+    });
+  }
+  var raf; function schedule(){ cancelAnimationFrame(raf); raf=requestAnimationFrame(draw); }
+  document.addEventListener('DOMContentLoaded', function(){ setTimeout(draw,60); });
+  window.addEventListener('load', function(){ draw(); setTimeout(draw,400);
+    document.querySelectorAll('img').forEach(function(im){ if(!im.complete) im.addEventListener('load',schedule); }); });
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ setTimeout(draw,50); });
+  window.addEventListener('resize', schedule);
+  var st; window.addEventListener('scroll', function(){ clearTimeout(st); st=setTimeout(schedule,60); }, {passive:true});
+})();
+</script>
 </body>
 </html>
